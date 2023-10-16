@@ -51,6 +51,13 @@ const Age=()=>
             ans=age-1;
         }
     }
-    document.getElementById("i2").innerHTML="You are "+ans+" years old."
+    if (ans>=0)
+    {
+        document.getElementById("i2").innerHTML="You are "+ans+" years old."
+    }
+    else
+    {
+        alert("Enter a valid Date of Birth.");
+    }
 }
 }
